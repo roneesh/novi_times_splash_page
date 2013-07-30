@@ -1,4 +1,10 @@
 NoviSplash::Application.routes.draw do
+  
+  get "/splash", controller: "pages", action: "splash"
+  get "/confirmation", controller: "pages", action: "confirmation"
+
+  root :to => "pages#splash"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
