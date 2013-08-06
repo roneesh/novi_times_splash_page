@@ -19,6 +19,9 @@ gem 'slim'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# A/B testing
+gem 'split', :require => 'split/dashboard'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 

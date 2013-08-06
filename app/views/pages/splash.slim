@@ -1,19 +1,22 @@
-.nav
-  =image_tag "rails.png"
-  ul.nav-list
+.nav.clearfix
+  =image_tag "logo.jpg"
+  p Novi
+  ul.nav-list.clearfix
     li.nav-item Sign Up
     li.nav-item Blog
     li.nav-item Contact
 
-.hero
-  .image-stripe
-    =image_tag "ipad.png"
-    h1 News 
-    h1 Without 
-    h1 Noise
+.hero.clearfix
+  .image-stripe.clearfix
+    .hero-image
+      =image_tag "ipad.png", class: "ipad"
+    .hero-text
+      h1 
+        = ab_test "Headline" "News Without Noise", "Roneesh is Awesome", "Some Third Option", "Some Fourth Option" 
   .description-stripe
-    p Novi is a news navigation app that allows you to follow specific topics instead of digging through multiple sources.
-    button Enter E-mail
+    .hero-text
+      p Novi is a news navigation app that allows you to follow specific topics instead of digging through multiple sources.
+      button Enter E-mail
 
 .how-it-works
   h3 Here's how it works...
