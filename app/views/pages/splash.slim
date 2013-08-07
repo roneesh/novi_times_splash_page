@@ -1,6 +1,6 @@
 .nav.clearfix
   =image_tag "logo.jpg"
-  p Novi
+  h1 Novi
   ul.nav-list.clearfix
     li.nav-item Sign Up
     li.nav-item Blog
@@ -11,68 +11,62 @@
     .hero-image
       =image_tag "ipad.png", class: "ipad"
     .hero-text
-      h1 
+      h1.headline 
         = ab_test "Headline" "News Without Noise", "Roneesh is Awesome", "Some Third Option", "Some Fourth Option" 
-  .description-stripe
+  .description-stripe.clearfix
     .hero-text
       p Novi is a news navigation app that allows you to follow specific topics instead of digging through multiple sources.
-      button Enter E-mail
+      button 
+        = link_to "Enter E-mail", confirmation_url, class: "link"
 
-.how-it-works
-  h3 Here's how it works...
+.how-it-works.clearfix
+  h3.off-color-heading Here's how it works...
   h3 By selecting certain topics to follow, you can easily navigate yourself through information overload.
-  =image_tag "select-toppic.png"
-  =image_tag "news-sources.png"
-  =image_tag "select-topic.png"
+  =image_tag "news_sources.jpg"
 
 
-.simple-easy
+.simple-easy.clearfix
   h3
     span Novi
     |  is a simple, easy, and better news reading experience.
-  .news-complex
+  .news
     .news-complex-image
-      = image_tag "nytimes.png"
+      = image_tag "news_old.jpg"
     .news-complex-copy
       h3 Online resources are too busy
       p Lorem ipsum dolor sit amet
-  .news-simplified
-    .new-simplified-image
-      = image_tag "novi.png"
-    .news-simplified-copy
+  .news
+    .news-simple-image
+      = image_tag "news_new.jpg"
+    .news-simple-copy
       h3 Navigate through the noise
       p Lorem ipsum dolor sit amet
 
-.full-context
-  .full-context-copy
-    h2 Get the full context of a story by following its timeline.
-    ul
-      li Lorem ipsum dolor sit amet
-      li Lorem ipsum dolor sit amet
-      li Lorem ipsum dolor sit amet
+.full-context.clearfix
+  .full-context-copy-container
+    .full-context-copy
+      h2 Get the full context of a story by following its timeline.
+      ul
+        li Lorem ipsum dolor sit amet
+        li Lorem ipsum dolor sit amet
+        li Lorem ipsum dolor sit amet
   .full-context-image
-    =image_tag "full-context.png"
+    =image_tag "ipad2.jpg"
 
-.follow-passions
+.follow-passions.clearfix
   h2 Follow your passions and never miss a thing.
   h2 Get real-time updates of the issues you care about the most.
-  ul.issues-list
-    li.issue
-      = image_tag "issue-politics.png"
-      h4 Politics
-      p Lorem ipsum dolor sit amet
-    li.issue
-      = image_tag "issue-education.png"
-      h4 Education
-      p Lorem ipsum dolor sit amet
-    li.issue
-      = image_tag "issue-climater.png"
-      h4 Climate Change
-      p Lorem ipsum dolor sit amet
-    li.issue
-      = image_tag "issue-privacy.png"
-      h4 Internet Privacy`
-      p Lorem ipsum dolor sit amet
+  .issues
+    = image_tag "issues_icons.jpg"
+    ul.issues-list.clearfix
+      li.issue
+        h4 Politics
+      li.issue
+        h4 Education
+      li.issue
+        h4 Climate Change
+      li.issue
+        h4 Internet Privacy
 
 .start-today
   h2
@@ -87,9 +81,15 @@
     | Get the App on the App store
 
 .bottom-nav
-  .bottom-nav-img
-    = image_tag "novi.png"
-  .bottom-nav-links
+  .bottom-nav-logo
+    h1 Novi
+    = image_tag "logo.jpg"
+  .bottom-nav-links.clearfix
     ul.nav-links
-      li.nav-link Facebook
-      li.nav-link Twitter
+      li.nav-link Blog
+      li.nav-link Contact
+      li.nav-link Privacy
+      li.social-media-link Facebook
+      li.social-media-link Twitter
+footer.splash-footer
+  p NOVI, LLC. Copyright 2013. All rights reserved.

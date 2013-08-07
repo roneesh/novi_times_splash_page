@@ -1,7 +1,7 @@
 NoviSplash::Application.routes.draw do
   
   get "/splash", controller: "pages", action: "splash"
-  get "/confirmation", controller: "pages", action: "confirmation"
+  get "/confirmation", controller: "pages", action: "confirmation", as: "confirmation"
 
   
 

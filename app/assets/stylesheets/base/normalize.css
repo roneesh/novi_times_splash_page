@@ -51,6 +51,8 @@ audio:not([controls]) {
     display: none;
 }
 
+
+
 /* ==========================================================================
    Base
    ========================================================================== */
@@ -272,6 +274,10 @@ legend {
     padding: 0; /* 2 */
 }
 
+ul {
+  -webkit-padding-start: 0px;
+
+}
 /**
  * 1. Correct font family not being inherited in all browsers.
  * 2. Correct font size not being inherited in all browsers.
