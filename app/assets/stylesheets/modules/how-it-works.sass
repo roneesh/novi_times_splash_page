@@ -6,6 +6,7 @@
   .hero-image
     float: left
     padding-top: 5%
+    margin-left: 0
   .hero-text
     float: left
     padding-top: 5%
@@ -48,27 +49,42 @@
   text-align: center
   h3
     padding: 30px 300px
+  img
+    width: 70%
 
 .simple-easy
-  background: yellow
   text-align: center
+  .simple-easy-heading
+    margin-bottom: -50px
+    position: relative
+    z-index: 1
+    color: white
 .news
   width: 50%
   float: left
 .news-complex-image
   background: gray
-  height: 700px
+  height: 600px
+  position: relative
   img
-    position: relative
+    position: absolute
+    max-width: 60%
     bottom: 0px
+    left: 20%
 .news-complex-copy
   background: rgba(28, 117, 189, 1)
   color: white
   height: 140px
   padding: 80px
 .news-simple-image
-  height: 700px
+  height: 600px
   background: #aaa
+  position: relative
+  img
+    position: absolute
+    max-width: 60%
+    bottom: 0px
+    left: 20%
 .news-simple-copy
   background: rgba(28, 117, 189, .75)
   color: white
@@ -111,6 +127,8 @@
 .issues
   width: 80%
   margin: 0 auto
+  img
+    width: 100%
 
 .issues-list
   display: inline-block
