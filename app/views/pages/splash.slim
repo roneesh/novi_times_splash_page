@@ -16,8 +16,15 @@
   .description-stripe.clearfix
     .hero-text
       p Novi is a news navigation app that allows you to follow specific topics instead of digging through multiple sources.
-      button 
-        = link_to "Enter E-mail", confirmation_url, class: "link"
+      <!-- Begin MailChimp Signup Form -->
+      / <div id="mc_embed_signup">
+      <form action="http://novitimes.us7.list-manage1.com/subscribe/post?u=f281bfca0ea394b3fc74986eb&amp;id=f9ed3187d3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <label for="mce-EMAIL">Subscribe to our mailing list</label>
+        <input type="email" value="" name="EMAIL" class="email mc-form" id="mce-EMAIL" placeholder="email address" required>
+        <div class="clear mc-form"><input type="submit" value="Sign Up!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </form>
+      / </div>
+      <!--End mc_embed_signup-->
 
 .how-it-works.clearfix
   h3.off-color-heading Here's how it works...

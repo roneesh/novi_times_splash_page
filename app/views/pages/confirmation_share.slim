@@ -7,6 +7,15 @@ html
     = csrf_meta_tags
 
   body.confirmation-page.clearfix
+    <div id="fb-root"></div>
+    javascript: 
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=214857187714";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     .confirm.clearfix
       .video
         <iframe width="560" height="315" src="//www.youtube.com/embed/PPkP12w9b3E" frameborder="0" allowfullscreen></iframe>
@@ -16,7 +25,9 @@ html
         p People in front of you
         p Share once to be in the first official release
         p Share on both to try it now.
-        button.social-media-btn facebook
-        button.social-media-btn twitter
+        <div class="fb-like" data-href="http://www.novitimes.com" data-width="450" data-show-faces="true" data-send="true"></div>
+        a[href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.novitimes.com" data-text="I'm getting my news through Novi now!" data-via="NoviTimes"] Tweet
     footer.confirm-footer
       p NOVI, LLC. Copyright 2013. All rights reserved.
+      javascript:
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
