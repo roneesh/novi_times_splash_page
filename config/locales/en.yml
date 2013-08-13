@@ -20,4 +20,17 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: "hello world!"
+  description: "Follow news stories in an elegantly designed timeline"
+  follow: "Follow news stories that you find interesting, and have updates sent to you as they happen."
+  old:
+    header: "Online sources are too busy"
+    content: "We consume 100,000 words every single day and remember only 10% of them, a huge waste of time for our generation."
+  new:
+    header: "Clean and Easy News Reading"
+    content: "We need a better way to read and understand things happening around us, Novi is just an easier and more beautiful way to do that."
+  timeline:
+    header: "Get the full context of a story by following it's timeline."
+    content: "Timelines are elegantly designd to give you a sense of how a story started, evolved and what its current status is."
+  follow1: "Follow your passions and never miss a thing." 
+  follow2: "Get real-time updates of the issues you care about the most."

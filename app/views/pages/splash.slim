@@ -12,10 +12,10 @@
       =image_tag "ipad.png", class: "ipad"
     .hero-text
       h1.headline 
-        = ab_test "Headline" "News Without Noise", "Follow News Though Timelines", "News For The Informed" 
+        = ab_test "Headline" "Follow Stories That Matter", "Follow Stories Through Timelines", "Your News Navigator", "Reinventing News Readers", "A News Reader That Works" 
   .description-stripe.clearfix
     .hero-text
-      p Novi is a news navigation app that allows you to follow specific topics instead of digging through multiple sources.
+      p= t "description"
       <!-- Begin MailChimp Signup Form -->
       / <div id="mc_embed_signup">
       <form action="http://novitimes.us7.list-manage1.com/subscribe/post?u=f281bfca0ea394b3fc74986eb&amp;id=f9ed3187d3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -28,7 +28,7 @@
 
 .how-it-works.clearfix
   h3.off-color-heading Here's how it works...
-  h3 By selecting certain topics to follow, you can easily navigate yourself through information overload.
+  h3= t "follow"
   =image_tag "news_sources.jpg"
 
 
@@ -40,29 +40,30 @@
     .news-complex-image
       = image_tag "news_old.jpg"
     .news-complex-copy
-      h3 Online resources are too busy
-      p Lorem ipsum dolor sit amet
+      h3= t "old.header"
+      p= t "old.content"
   .news
     .news-simple-image
       = image_tag "news_new.jpg"
     .news-simple-copy
-      h3 Navigate through the noise
-      p Lorem ipsum dolor sit amet
+      h3= t "new.header"
+      p= t "new.content"
 
 .full-context.clearfix
   .full-context-copy-container
     .full-context-copy
-      h2 Get the full context of a story by following its timeline.
-      ul
-        li Lorem ipsum dolor sit amet
-        li Lorem ipsum dolor sit amet
-        li Lorem ipsum dolor sit amet
+      h2= t "timeline.header"
+      p= t "timeline.content"
+      / ul
+      /   li Lorem ipsum dolor sit amet
+      /   li Lorem ipsum dolor sit amet
+      /   li Lorem ipsum dolor sit amet
   .full-context-image
     =image_tag "ipad2.jpg"
 
 .follow-passions.clearfix
-  h2 Follow your passions and never miss a thing.
-  h2 Get real-time updates of the issues you care about the most.
+  h2= t "follow1"
+  h2= t "follow2"
   .issues
     = image_tag "issues_icons.jpg"
     ul.issues-list.clearfix
@@ -93,8 +94,8 @@
     = image_tag "novi-logo.jpg"
   .bottom-nav-links.clearfix
     ul.nav-links
-      li.nav-link Contact
-      li.social-media-link Facebook
-      li.social-media-link Twitter
+      li.nav-link =mail_to "contact@novitimes.com", "Contact"
+      li.social-media-link= link_to "Facebook", "https://www.facebook.com/pages/Novi-Times/540908145931550", target: "blank"
+      li.social-media-link= link_to "Twitter", "https://twitter.com/NoviTimes", target: "blank"
 footer.splash-footer
   p NOVI, LLC. Copyright 2013. All rights reserved.
