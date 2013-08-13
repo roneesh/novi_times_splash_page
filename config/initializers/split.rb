@@ -9,4 +9,3 @@ Split::Dashboard.use Rack::Auth::Basic do |username, password|
   username == 'admin' && password == 'admin'
 end
 
-Split.redis = ENV["REDISTOGO_URL"] if ENV["REDISTOGO_URL"]
