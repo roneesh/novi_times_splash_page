@@ -25,6 +25,9 @@ gem 'slim'
 # A/B testing
 gem 'split', :require => 'split/dashboard'
 
+# Getting subscriber count from mailchimp API
+gem 'gibbon'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 

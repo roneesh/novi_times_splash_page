@@ -12,6 +12,8 @@ class PagesController < ApplicationController
 
   def confirmation_share
     
+    @wait_list = Gibbon::API.lists.list["data"][0]["stats"]["member_count"]
+
     respond_to do |f|
       f.html { render layout: false }
     end
