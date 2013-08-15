@@ -53,3 +53,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Use Bootstrap3 RC2
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :github => 'anjlab/bootstrap-rails', :branch => '3.0.0'
