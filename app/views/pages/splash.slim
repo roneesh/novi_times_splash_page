@@ -14,7 +14,7 @@
       h1.headline 
         = ab_test "Headline" "Follow Stories That Matter", "Follow Stories Through Timelines", "Your News Navigator", "Reinventing News Readers", "A News Reader That Works" 
   .description-stripe.clearfix
-    .hero-text
+    .hero-text.clearfix
       p.hero-text-description= t "description"
       <!-- Begin MailChimp Signup Form -->
       / <div id="mc_embed_signup">
@@ -36,13 +36,13 @@
   h3.simple-easy-heading
     span.blue Novi
     |  is a simple, easy, and better news reading experience.
-  .news
+  .news.clearfix
     .news-complex-image
       = image_tag "nyt.jpg"
     .news-complex-copy
       h3= t "old.header"
       p= t "old.content"
-  .news
+  .news.clearfix
     .news-simple-image
       = image_tag "novi_webpage.jpg"
     .news-simple-copy
