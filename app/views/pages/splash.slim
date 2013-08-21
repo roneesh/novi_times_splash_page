@@ -8,12 +8,12 @@
 
 .hero.clearfix
   .image-stripe.clearfix
+    .hero-image
+      =image_tag "novi_mobile.png", class: "ipad"
     .hero-text
       h1.headline 
         = ab_test "Headline" "Follow Stories That Matter", "Follow Stories Through Timelines", "Your News Navigator", "Reinventing News Readers", "A News Reader That Works" 
   .description-stripe.clearfix
-    .hero-image
-      =image_tag "novi_mobile.png", class: "ipad"
     .hero-text
       p.hero-text-description= t "description"
       <!-- Begin MailChimp Signup Form -->
