@@ -9,19 +9,19 @@
 .hero.clearfix
   .image-stripe.clearfix
     .hero-image
-      =image_tag "ipad.png", class: "ipad"
+      =image_tag "novi_mobile.png", class: "ipad"
     .hero-text
       h1.headline 
         = ab_test "Headline" "Follow Stories That Matter", "Follow Stories Through Timelines", "Your News Navigator", "Reinventing News Readers", "A News Reader That Works" 
   .description-stripe.clearfix
     .hero-text
-      p= t "description"
+      p.hero-text-description= t "description"
       <!-- Begin MailChimp Signup Form -->
       / <div id="mc_embed_signup">
-      <form action="http://novitimes.us7.list-manage1.com/subscribe/post?u=f281bfca0ea394b3fc74986eb&amp;id=f9ed3187d3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <label for="mce-EMAIL">Subscribe to our mailing list</label>
-        <input type="email" value="" name="EMAIL" class="email mc-form" id="mce-EMAIL" placeholder="email address" required>
-        <div class="clear mc-form"><input type="submit" value="Sign Up!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      <form action="http://novitimes.us7.list-manage1.com/subscribe/post?u=f281bfca0ea394b3fc74986eb&amp;id=f9ed3187d3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mc-form" target="_blank" novalidate>
+        <label class="form-label" for="mce-EMAIL">Join our mailing list</label><br/>
+        <input type="email" value="" name="EMAIL" class="form-text-field email mc-form" id="mce-EMAIL" placeholder="email address" required><br/>
+        <div class="form-submit clear mc-form"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
       </form>
       / </div>
       <!--End mc_embed_signup-->
@@ -38,13 +38,13 @@
     |  is a simple, easy, and better news reading experience.
   .news
     .news-complex-image
-      = image_tag "news_old.jpg"
+      = image_tag "nyt.jpg"
     .news-complex-copy
       h3= t "old.header"
       p= t "old.content"
   .news
     .news-simple-image
-      = image_tag "news_new.jpg"
+      = image_tag "novi_webpage.jpg"
     .news-simple-copy
       h3= t "new.header"
       p= t "new.content"
@@ -59,21 +59,24 @@
       /   li Lorem ipsum dolor sit amet
       /   li Lorem ipsum dolor sit amet
   .full-context-image
-    =image_tag "ipad2.jpg"
+    =image_tag "novi_laptop.png"
 
 .follow-passions.clearfix
   h2= t "follow1"
   h2= t "follow2"
   .issues
-    = image_tag "issues_icons.jpg"
     ul.issues-list.clearfix
       li.issue
+        = image_tag "politics.svg", class: "issue-img"
         h4 Politics
       li.issue
+        = image_tag "education.svg", class: "issue-img"
         h4 Education
       li.issue
+        = image_tag "climate.svg", class: "issue-img"
         h4 Climate Change
       li.issue
+        = image_tag "privacy.svg", class: "issue-img"
         h4 Internet Privacy
 
 .start-today
@@ -81,12 +84,12 @@
     | Start using
     span.blue  Novi
     |  today!
-  button
-    | Request an invite for a beta
+  / button
+  /   | Request an invite for a beta
   button 
     | Get started online
   button
-    | Get the App on the App store
+    | Get Novi the App store
 
 .bottom-nav
   .bottom-nav-logo
