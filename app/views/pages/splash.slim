@@ -4,7 +4,7 @@
   ul.nav-list.clearfix
     / li.nav-item Sign Up
     / li.nav-item Blog
-    li.nav-item Contact
+    li.nav-item =mail_to "contact@novitimes.com", "Contact"
 
 .hero.clearfix
   .image-stripe.clearfix
@@ -27,8 +27,8 @@
       <!--End mc_embed_signup-->
 
 .how-it-works.clearfix
-  h3.off-color-heading Here's how it works...
-  h3= t "follow"
+  h3.how-it-works-heading.off-color-heading Here's how it works...
+  h3.how-it-works-heading.how-it-works-follow= t "follow"
   =image_tag "news_sources.jpg"
 
 
