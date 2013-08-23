@@ -1,11 +1,13 @@
 NoviSplash::Application.routes.draw do
   
+  root :to => redirect('http://novine.ws')
+
   get "/splash", controller: "pages", action: "splash"
   get "/confirmation", controller: "pages", action: "confirmation", as: "confirmation"
   get '/confirmation_share', controller: 'pages', action: 'confirmation_share', as: 'confirmation_share'
   mount Split::Dashboard, :at => 'split'
 
-  root :to => "pages#splash"
+  # root :to => "pages#splash"
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
