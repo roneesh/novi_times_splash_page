@@ -4,7 +4,7 @@
   ul.nav-list.clearfix
     / li.nav-item Sign Up
     / li.nav-item Blog
-    li.nav-item =mail_to "contact@novitimes.com", "Contact"
+    li.nav-item =mail_to "contact@novitimes.com", "CONTACT"
 
 .hero.clearfix
   .image-stripe.clearfix
@@ -52,7 +52,7 @@
 .full-context.clearfix
   .full-context-copy-container
     .full-context-copy
-      h2= t "timeline.header"
+      h2.blue= t "timeline.header"
       p= t "timeline.content"
       / ul
       /   li Lorem ipsum dolor sit amet
@@ -97,8 +97,8 @@
     = image_tag "novi-logo.jpg"
   .bottom-nav-links.clearfix
     ul.nav-links
-      li.nav-link =mail_to "contact@novitimes.com", "Contact"
       li.social-media-link= link_to "Facebook", "https://www.facebook.com/pages/Novi-Times/540908145931550", target: "blank"
       li.social-media-link= link_to "Twitter", "https://twitter.com/NoviTimes", target: "blank"
+      li.nav-link =mail_to "contact@novitimes.com", "Contact"
 footer.splash-footer
   p NOVI, LLC. Copyright 2013. All rights reserved.
